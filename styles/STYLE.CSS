@@ -1,10 +1,11 @@
 /* Estilos Gerais */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    overflow-x: hidden;
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+        line-height: 1.5; /* Melhora a legibilidade em dispositivos móveis */
+    }
 }
 
 /* Cabeçalho */
@@ -126,7 +127,7 @@ nav ul li a:hover {
 
 
 .carousel img {
-    width: 130px; /* Ajuste para o tamanho das imagens */
+    width: 10vw; /* Ajuste para o tamanho das imagens */
     height: 100%;
     object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
     padding: 1px;
