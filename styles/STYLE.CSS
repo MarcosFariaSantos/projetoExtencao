@@ -11,7 +11,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: white;
     padding: 10px 20px;
     color: black;
@@ -84,9 +84,9 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 #paleta{
-    background-color: blue;
+    background-color: red;
     width: 100%;
-    height: 8px;
+    height: 2px;
     margin-top: 150px;
 }
 /* Quadro de Imagens (Carrossel) */
@@ -137,24 +137,28 @@ nav ul li a:hover {
 }
 
 /* História da empresa */
-#historias {
+#Historias {
     background-color: #f8f8f8; /* Fundo claro */
     color: #333;
     padding: 50px 20px;
     text-align: center;
     font-family: 'Arial', sans-serif;
-    border-top: 5px solid #ff6600; /* Linha superior em laranja */
+    border-top: 5px solid red; 
 }
 
-#historias h2 {
-    font-size: 30px;
+
+#h2historia {
+    font-size: 25px;
     font-weight: bold;
     color: #1d1d1d;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
-
 .historia-texto {
     font-size: 18px;
     line-height: 1.6;
@@ -167,7 +171,7 @@ nav ul li a:hover {
 
 .historia-texto .empresa-nome {
     font-weight: bold;
-    color: #ff6600; /* Destaque em laranja para o nome da empresa */
+    color: red; /* Destaque em laranja para o nome da empresa */
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -267,7 +271,7 @@ nav ul li a:hover {
 
 
 /* Avaliações */
-/* Avaliações */
+
 #avaliacoes {
     background-color: #f2f2f2;
     color: #333;
@@ -296,42 +300,42 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Largura do quadro */
-    display: none; /* Inicialmente escondemos todas as avaliações */
+    width: 300px; /* Largura fixa para todas as caixas */
+    height: 200px; /* Altura fixa para todas as caixas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Exibição do texto da avaliação */
 .avaliacao-texto {
-    font-size: 25px;
-    color:white;
+    font-size: 18px;
+    color: white;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /* Autor da avaliação */
 .avaliacao-autor {
-    font-size: 20px;
-    color:white;
+    font-size: 16px;
+    color: white;
 }
 
-/* Estilo das setas */
-.setas {
-    margin-top: 20px;
+/* Estilo das estrelas */
+.avaliacao-estrelas {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+    color: yellow;
 }
 
-.seta {
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: #333;
-    cursor: pointer;
-    padding: 10px;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+.avaliacao-estrelas img {
+    width: 20px;
+    height: 20px;
 }
 
-.seta:hover {
-    color: #ff6600; /* Muda a cor quando passar o mouse */
-}
 
 
 /* Estilos para a Seção de Contato */
